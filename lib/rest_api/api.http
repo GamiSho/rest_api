@@ -1,0 +1,36 @@
+GET http://localhost:8080 HTTP/1.1
+
+###
+
+GET http://localhost:8080/knockknock HTTP/1.1
+
+###
+
+GET http://localhost:8080/posts HTTP/1.1
+
+###
+
+GET http://localhost:8080/post/6361fbd22abdf88cf5c4c633 HTTP/1.1
+
+###
+
+POST http://localhost:8080/post HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Third POST",
+    "content": "Rage, rage against the dying of the light"
+}
+
+###
+
+PUT http://localhost:8080/post/6361fbd22abdf88cf5c4c633 HTTP/1.1
+content-type: application/json
+
+{
+    "content": "Rage, rage against the dying of the light :)"
+}
+
+###
+
+DELETE http://localhost:8080/post/6361fbd22abdf88cf5c4c633 HTTP/1.1
